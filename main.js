@@ -251,7 +251,6 @@ $("#remake").on("click", function(event){
 
     $("#environment1").empty();
     $("#environment2").empty();
-    $("#environment3").empty();
 
     $("#inhabitants1").empty();
     $("#inhabitants2").empty();
@@ -270,7 +269,6 @@ $("#remake").on("click", function(event){
 
     $("#environment1").text(environment());
     $("#environment2").text(environment());
-    $("#environment3").text(environment());
 
     $("#inhabitants1").text(oddities());
     $("#inhabitants2").text(oddities());
