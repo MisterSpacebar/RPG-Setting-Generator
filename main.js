@@ -28,9 +28,9 @@ function punkFiction () {
 }
 
 function landmark () {
-    var feature = ["Canyons", "Cave Network", "Massive Crater", "Huge Glaciers", "Towering Mountains","Ocean Reefs","Active Volcano"];
+    var feature = ["Canyon/Canyons", "Cave Network", "Massive Crater", "Huge Glaciers", "Towering Mountains","Ocean Reefs","Active Volcano"];
 
-    return "•Landmark: "+feature[randomGen(feature.length)];
+    return "•Landmark: the setting is dominated by a "+feature[randomGen(feature.length)];
 }
 
 function faction () {
