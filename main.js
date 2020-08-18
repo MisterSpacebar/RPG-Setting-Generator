@@ -142,7 +142,7 @@ function climate () {
     if (diceRoll == 0) { return "Searing Termperatures: The world's median temperatures are too hot to comfortably survive, except to hardly life that has specifically evolved to deal with the heat."}
     if (diceRoll == 1 || diceRoll == 2) { return "Hot World: Most of the world tends towards hotter-than-average climates, though some regions may be temperate or cool."}
     if (diceRoll > 2 && diceRoll < 7) { return "Temperate World: This world sees a wide range of temperatures across its surface"}
-    if (diceRoll > 6 && diceRoll < 8) { return "Cold World: The world tends towards cooler-than-average cliamtes. While a few regions or microclimates may be temperate or hot, most of the planet is cool or cold."}
+    if (diceRoll > 6 && diceRoll <= 8) { return "Cold World: The world tends towards cooler-than-average cliamtes. While a few regions or microclimates may be temperate or hot, most of the planet is cool or cold."}
     if (diceRoll == 9) { return "Frozen World: The world is so cold, it can barely support life. Only rare regions have liquid water, and the life that thats evolved on this world has specific ways of dealing with the cold."}
 }
 
