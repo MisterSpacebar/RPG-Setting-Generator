@@ -33,6 +33,41 @@ function landmark () {
     return "Landmark: "+feature[randomGen(feature.length)];
 }
 
+function faction () {
+    var diceRoll = randomGen(100);
+
+    if (diceRoll < 8) { return "Academics: Individuals dedicated to learning and research, who may have banded together."}
+    if (diceRoll > 7 && diceRoll < 15) { return "Caste System: Social stratification of a society based on heredity."}
+    if (diceRoll > 14 && diceRoll < 22) { return "Clans: Traditionally based on an extended family grouping, but may extend beyond family ties."}
+    if (diceRoll > 21 && diceRoll < 30) { return "Corporation: Formal business with executives, board members, officiers, employees, etc."}
+    if (diceRoll > 29 && diceRoll < 37) { return "Fans/Fanatics: People that have banded together over a common interest and may struggle against other similar groups that do not share their beliefs."}
+    if (diceRoll > 36 && diceRoll < 46) { return "Guild: An organization of people that may have a monopoly on a particular portion of the market, or a loose collective of individuals who just wants to look out for one another when a greater threat looms."}
+    if (diceRoll > 45 && diceRoll < 56) { return "Military: A militant group that tend to follow a strict hierarchy, with professional codes of conduct."}
+    if (diceRoll > 55 && diceRoll < 65) { return "Pirates: A faction of outlaws that usually has rallied around a singluar charismatic leader."}
+    if (diceRoll > 64 && diceRoll < 74) { return "Political Faction: A group of individuals who share common overall political and societal viewpoints."}
+    if (diceRoll > 73 && diceRoll < 83) { return "Rebels/Terrorists: Groups working towards a violent overthrowing of an organization or government."}
+    if (diceRoll > 82 && diceRoll < 91) { return "Religious Organization: A group of individuals with similar philosophical and/or religious beliefs."}
+    if (diceRoll > 90) { return "Union: A group of working-class individuals who have banded together to lobby for better working conditions, pay, or other benefits."}
+}
+
+function objectives () {
+    var diceRoll = randomGen(100);
+
+    if (diceRoll < 7) { return "Assassination (the organization attempts to covertly murder influential individuals who threaten its existance)"}
+    if (diceRoll > 6 && diceRoll < 15) { return "Economic Growth (the organization is maximizing its potential for monetary earnings)"}
+    if (diceRoll > 14 && diceRoll < 22) { return "Exploration (the organzation wishes to explore specific regions for raw materials, discoveries, isolated societies, glory, etc.)"}
+    if (diceRoll > 21 && diceRoll < 30) { return "Illicit Activities (the organization runs criminal rackets such as smuggling, gambling, extortion, or similar measures to make money and/or to control certain areas or types of operations"}
+    if (diceRoll > 29 && diceRoll < 36) { return "Investigation (the organization carries out investigations of controversial or criminial activities in order to protect the public or to further their objectives)"}
+    if (diceRoll > 35 && diceRoll < 45) { return "Enforcement (the organization enforces the laws of the land)"}
+    if (diceRoll > 44 && diceRoll < 54) { return "Military Expansion (the organization expands its power through military means, such as invasions or conquests)"}
+    if (diceRoll > 53 && diceRoll < 64) { return "Monopoly (the organization seeks to corner the market for specific goods and services)"}
+    if (diceRoll > 63 && diceRoll < 72) { return "Overthrow (the organization seeks to overthrow the head of another organization or government or another powerful entity)"}
+    if (diceRoll > 71 && diceRoll < 81) { return "Protection (the organization seeks to protect something or a group or allied organizations)"}
+    if (diceRoll > 80 && diceRoll < 88) { return "Research (the organization researches specific subjectives to facilitate developments)"}
+    if (diceRoll > 87 && diceRoll < 94) { return "Territory (the organization seeks to expand its territory or influence to protect what it already has)"}
+    if (diceRoll > 93) { return "Terrorism (the organization are trained and funded to achieve change through violent attacks against a population)"}
+}
+
 function technologyLevel () {
     var diceRoll = randomGen(101);
 
@@ -103,7 +138,7 @@ function worldStructure () {
 
 function climate () {
     var diceRoll = randomGen(10);
-
+    
     if (diceRoll == 0) { return "Searing Termperatures: The world's median temperatures are too hot to comfortably survive, except to hardly life that has specifically evolved to deal with the heat."}
     if (diceRoll == 1 || diceRoll == 2) { return "Hot World: Most of the world tends towards hotter-than-average climates, though some regions may be temperate or cool."}
     if (diceRoll > 2 && diceRoll < 7) { return "Temperate World: This world sees a wide range of temperatures across its surface"}
@@ -126,7 +161,7 @@ function environment () {
     if (diceRoll == 9) { return landmark() }
 }
 
-function population () {
+function population (l) {
     var diceRoll = randomGen(10);
 
     if (diceRoll == 0 || diceRoll == 1) { return "Uninhabited: There are no peoples living in this region"}
@@ -140,5 +175,104 @@ function population () {
 }
 
 function oddities () {
+    var diceRoll = randomGen(100);
 
+    if (diceRoll < 6) { return "Warlike Wanderers: The region is plagued by wandering groups of warlike nomads. It is difficult to treat with these groups or negotiate with them."}
+    if (diceRoll > 5 && diceRoll < 11) { return "Sky Islands: Mountain-sized chunks of rock float above this region. They are so large that there are entire ecosystems and potential communities inhabit them."}
+    if (diceRoll > 10 && diceRoll < 19) { return "Megafauna: The region has populations of extreme large animals. At minimum, they are the size of larger dinosaurs from Earth's prehistory, but could be bigger."}
+    if (diceRoll > 18 && diceRoll < 26) { return "Spectacular Natural Beauty: The region is extreme beautiful. Local populations treasure the resplendence they live among, and other may journey to this region to bask in its splendor."}
+    if (diceRoll > 25 && diceRoll < 34) { return "Megaflora: Plant life in the region grows to be extreme large. It could include trees kilometers tall, fungi the size of houses, and other plantlife that is large enough to carve residences in."}
+    if (diceRoll > 33 && diceRoll < 36) { return "The Pit: A bottomless pit sits in a prominent location in this region. Nobody knows how this came to be, or whether it is artificial or natural."}
+    if (diceRoll > 35 && diceRoll < 47) { return "Valuable Resource: An extremely valuable resource exists in the region. It may make the locals rich, or it may also cause outsiders to venture into the region to exploit them."}
+    if (diceRoll > 46 && diceRoll < 50) { return "Incomprehensible Intelligences: The local population share the region with some sort of other life that, while seemingly intellegent, is so different that interacting with it is impossible."}
+    if (diceRoll > 49 && diceRoll < 59) { return "Ruins of a Elder Race: The region is dominated by the ruins from an older species or previous culture. Their technology is likely more advanced than that of current civilization, or at least their constructions remain marvels of engineering that dominate the landscape."}
+    if (diceRoll > 58 && diceRoll < 64) { return "Gestalt Life Form: Nearly all local life in the region is linked psychically or biologically, so that it is all part of one vast organism. This does not necessarily apply to the local inhabitants of the society the players may interact with."}
+    if (diceRoll > 63 && diceRoll < 69) { return "Elaborate Cave System: Underneath ths region is an extensive and extremely elaborate cave system with its own complex ecosystem."}
+    if (diceRoll > 68 && diceRoll < 71) { return "Localized Anomalies: For some reason, physics dont quite behave correctly in some parts of this region. Gravity may be stronger or weaker than normal, time may pass differently, or even stranger things may occur."}
+    if (diceRoll > 70 && diceRoll < 76) { return "Secret Base: An organization that has no local ties to the region has set up some sort of facility in it. Whatever it is, its members actively discourage others from being involved with its business. Your Secret Society is: "+faction(randomGen(100))+" They have the objective of "+objectives(randomGen(100))+"."}
+    if (diceRoll > 75 && diceRoll < 79) { return "Dragons: The region is home to a population of massive and intellegent reptilians that can fly and breathe fire or another primal element. They may have their own culture and society, and may regard the other local inhabitants with some mixture of annoyance, disdain, or active dislike."}
+    if (diceRoll > 78 && diceRoll < 85) { return "Constant Storms: The region is plagued by consitant storm systems that may be powerful and violent."}
+    if (diceRoll > 84 && diceRoll < 89) { return "Site of a Great Historical Event: Long ago, something incredibly important happened in a location in the region. Whatever it was, a monument has been erected to memorialize it."}
+    if (diceRoll > 88 && diceRoll < 93) { return "War Zone: This region is plagued by constant (if potentially intermittent) war between two or more factions. Locals work to try and survive the battles and skirmishes going on around them."}
+    if (diceRoll > 92 && diceRoll < 98) { return "Monastery: An organization has set up a monastery or retreat in the region. The organization's members are welcoming and open about their presence and work hard to be good neighbors with the inhabitants. Your Organization is: "+faction(randomGen(100))+" They have the objective of "+objectives(randomGen(100))+"."}
+    if (diceRoll > 97) { return "Hunter: Something lives in the region that hunts its inhabitants for some reason. The Hunter may be a creature, person, or something stranger. Whatever it is, the local communities has been unable to eliminate it and is forced to live around it instead."}
 }
+
+function pantheon () {
+    var diceRoll = randomGen(10);
+
+    if (diceRoll == 0) { return "composed entirely of good deities."}
+    if (diceRoll > 0 && diceRoll < 5) { return "composed of a mix of good and evil deities."}
+    if (diceRoll > 4 && diceRoll < 9) { return "composed of amoral deities, neither good nor evil."}
+    if (diceRoll == 9) { return "composed entirely of evil deities."}
+}
+
+function monotheist () {
+    var diceRoll = randomGen(10);
+
+    if (diceRoll < 4) { return "entirely good."}
+    if (diceRoll > 3 && diceRoll < 8) { return "amoral, neither good nor evil."}
+    if (diceRoll > 7) { return "entirely evil."}
+}
+
+function cosmology () {
+    var diceRoll = randomGen(10);
+
+    if (diceRoll < 2) { return "No Divine Spark: Religion is absent from this setting. There are no gods or belief in the divine."}
+    if (diceRoll > 1 && diceRoll < 5) { return "Polytheistic Pantheon: The setting features a pantheon of powerful beings, each of which has a different portfolio of responsibilities. Your pantheon is "+pantheon()}
+    if (diceRoll == 5) { return "World Spirit: The setting believes that all of the souls or spiritual energies of all living things on a world combine into a single gestalt 'World Spirit'."}
+    if (diceRoll == 6) { return "Many Spirits: The setting believes that most natural things have a spirit that is a discrete and indentifiable entity."}
+    if (diceRoll > 7) { return "Monotheistic Religion: The setting features a singular all-powerful being. The deity may be visualized as an ideal form of the principal species that worships it, or it may be more of a concept or idea. Your deity is "+monotheist()}
+}
+
+function government () {
+    var diceRoll = randomGen(10);
+
+    if (diceRoll == 0) { return "Anarchy: There is no organized political structure; everyone looks out for themelves and immediate acquantances."}
+    if (diceRoll > 0 && diceRoll < 3) { return "Local Rulers: Governance exists on a smaller and local scale, with groups of peoples electing their own rulers, or being ruled by hereditary rulers, or following the banner of warlords."}
+    if (diceRoll > 2 && diceRoll < 5) { return "City-State: Each major hub is effectively its own state and controls the territory around them, trades with their neighbors, make war on their enemies, and generally perform all the tasks of a government on a smaller scale."}
+    if (diceRoll > 4 && diceRoll < 8) { return "Nation-State: Governance exists on a large scale and often controls many cities and other population centers within its borders."}
+    if (diceRoll > 7) { return "World Government: The world is unified under a singular government. Society likely has multiple cultures and ethnicities coexisting side by side, though not necessarily harmoniously."}
+}
+
+$("#remake").on("click", function(event){
+    event.preventDefault();
+
+    $("#technology").empty();
+    $("#size").empty();
+    $("#population").empty();
+    $("#government").empty();
+    $("#religion").empty();
+    $("#climate").empty();
+
+    $("#trope1").empty();
+    $("#trope2").empty();
+    $("#trope3").empty();
+
+    $("#environment1").empty();
+    $("#environment2").empty();
+    $("#environment3").empty();
+
+    $("#inhabitants1").empty();
+    $("#inhabitants2").empty();
+    $("#inhabitants3").empty();
+
+    $("#technology").text(technologyLevel());
+    $("#size").text(worldStructure());
+    $("#population").text(population());
+    $("#government").text(government());
+    $("#religion").text(cosmology());
+    $("#climate").text(climate());
+
+    $("#trope1").text(commonTropes());
+    $("#trope2").text(commonTropes());
+    $("#trope3").text(commonTropes());
+
+    $("#environment1").text(environment());
+    $("#environment2").text(environment());
+    $("#environment3").text(environment());
+
+    $("#inhabitants1").text(oddities());
+    $("#inhabitants2").text(oddities());
+    $("#inhabitants3").text(oddities());
+});
