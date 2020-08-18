@@ -164,8 +164,8 @@ function environment () {
 function population (l) {
     var diceRoll = randomGen(10);
 
-    if (diceRoll == 0 || diceRoll == 1) { return "Uninhabited: There are no peoples living in this region"}
-    if (diceRoll == 2) { return "Isolated Low-Tech Groups: The region is mostly uninhabited, but a few small tribes, families, or bands of people live here, but off from the rest of the world."}
+    if (diceRoll == 0) { return "Uninhabited: There are no peoples living in this region"}
+    if (diceRoll == 1 || diceRoll == 2) { return "Isolated Low-Tech Groups: The region is mostly uninhabited, but a few small tribes, families, or bands of people live here, but off from the rest of the world."}
     if (diceRoll == 3) { return "Scattered Individuals: The region has a few individuals living on isolated farmsteads, hunting lodges, or simply in homes far removed from any major population centers."}
     if (diceRoll == 4 || diceRoll == 5) { return "Small Communities: The region has some small towns or hamlets, with scattered homes or farms in between."}
     if (diceRoll == 6) { return "Midsized Towns: The region has some moderated sized towns with smaller towns or hamlets on their outskirts."}
