@@ -222,7 +222,7 @@ function cosmology () {
     if (diceRoll > 1 && diceRoll < 5) { return "Polytheistic Pantheon: The setting features a pantheon of powerful beings, each of which has a different portfolio of responsibilities. Your pantheon is "+pantheon()}
     if (diceRoll == 5) { return "World Spirit: The setting believes that all of the souls or spiritual energies of all living things on a world combine into a single gestalt 'World Spirit'."}
     if (diceRoll == 6) { return "Many Spirits: The setting believes that most natural things have a spirit that is a discrete and indentifiable entity."}
-    if (diceRoll > 7) { return "Monotheistic Religion: The setting features a singular all-powerful being. The deity may be visualized as an ideal form of the principal species that worships it, or it may be more of a concept or idea. Your deity is "+monotheist()}
+    if (diceRoll > 6) { return "Monotheistic Religion: The setting features a singular all-powerful being. The deity may be visualized as an ideal form of the principal species that worships it, or it may be more of a concept or idea. Your deity is "+monotheist()}
 }
 
 function government () {
