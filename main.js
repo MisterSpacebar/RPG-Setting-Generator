@@ -7,22 +7,22 @@ function randomGen (upto) {
 }
 
 function periodPiece () {
-    var period = ["Cold War","Victorian England","Vietnam War","World War","Feudualism","Dark Ages","Enlightenment","Age of Discovery","Colonial Africa","Manifest Destiny","Nomadic Wandering"];
+    var period = ["•Cold War","•Victorian England","•Vietnam War","•World War","•Feudualism","•Dark Ages","•Enlightenment","•Age of Discovery","•Colonial Africa","•Manifest Destiny","•Nomadic Wandering"];
 
     return "•Historical Aesthetics: This setting is draped in a historical look and feel, much like a period piece. Your period piece is: "+period[randomGen(period.length)]
 }
 
 function punkFiction () { 
-    var punk = ["Steampunk: A retro-futurism pseudoscience fiction in which advanced technology is replaced with steam-powered equivalents, usually set in a Victorian England equvalent.",
-                "Solarpunk: Speculative fiction that focuses on craftsmanship, community, and technology powered by a renewable energy source.",
-                "Cyberpunk: Dystopian fiction that focuses on the juxtaposition of low-life characters in a high-tech society, featuring advanced technological and scientific achievements, such as artificial intelligence and cybernetics, juxtaposed with a degree of breakdown or radical change in the social order.",
-                "Splatterpunk: Horror fiction distinguished by its graphic, gory depiction of violence and counterculture.",
-                "Mythicpunk: Mythic fiction set in folklore and myth that subverts or questions its dominant norms.",
-                "Rococopunk: Whimsical fiction set in a world where the late baroque perid never ended.",
-                "Clockpunk: A retro-futurism pseudoscience fiction in which advanced technology is replaced with spring-powered equivalents, usually set in a Renaissance Europe equvalent.",
-                "Atompunk: A retro-futurism pseudoscience fiction in which advanced technology is replaced with nuclear-powered equivalents, usually set in a post-WW2 United States equvalent.",
-                "Diselpunk/Decopunk: A retro-futurism pseudoscience fiction in which advanced technology is replaced with petroleum-powered equivalents, usually set in a late-WW1/early-WW2 equvalent, sometimes splattered with Art Deco.",
-                "Stonepunk: A retro-futurism pseudoscience fiction in which modern technology is replaced with stone-'powered' equivalents, usually set in the Stone Age."];
+    var punk = ["•Steampunk: A retro-futurism pseudoscience fiction in which advanced technology is replaced with steam-powered equivalents, usually set in a Victorian England equvalent.",
+                "•Solarpunk: Speculative fiction that focuses on craftsmanship, community, and technology powered by a renewable energy source.",
+                "•Cyberpunk: Dystopian fiction that focuses on the juxtaposition of low-life characters in a high-tech society, featuring advanced technological and scientific achievements, such as artificial intelligence and cybernetics, juxtaposed with a degree of breakdown or radical change in the social order.",
+                "•Splatterpunk: Horror fiction distinguished by its graphic, gory depiction of violence and counterculture.",
+                "•Mythicpunk: Mythic fiction set in folklore and myth that subverts or questions its dominant norms.",
+                "•Rococopunk: Whimsical fiction set in a world where the late baroque perid never ended.",
+                "•Clockpunk: A retro-futurism pseudoscience fiction in which advanced technology is replaced with spring-powered equivalents, usually set in a Renaissance Europe equvalent.",
+                "•Atompunk: A retro-futurism pseudoscience fiction in which advanced technology is replaced with nuclear-powered equivalents, usually set in a post-WW2 United States equvalent.",
+                "•Diselpunk/Decopunk: A retro-futurism pseudoscience fiction in which advanced technology is replaced with petroleum-powered equivalents, usually set in a late-WW1/early-WW2 equvalent, sometimes splattered with Art Deco.",
+                "•Stonepunk: A retro-futurism pseudoscience fiction in which modern technology is replaced with stone-'powered' equivalents, usually set in the Stone Age."];
     
     return "•Punk is a subgenre of speculative fiction settings featuring a world built on one particular technology that is extrapolated to a highly sophisticated level, a gritty transreal urban style, or a particular approach to social themes. Your punk derivative is "+punk[randomGen(punk.length)];
 }
@@ -133,7 +133,7 @@ function worldStructure () {
     if (diceRoll > 4 && diceRoll < 7) { return "Large World: The planet is very large and has a great deal of mass. Things may be squat and incredibly strong to resist the pull of extreme gravity."}
     if (diceRoll == 7) { return "Rings: The planet has a prominent ring system. If the prominent civilization is sufficiently advanced enough, the ring may interfere with space travel."}
     if (diceRoll == 8) { return "Tidally Locked World: The planet is gravitationally locked with its star."}
-    if (diceRoll == 9) { return "Artifical Construction: The setting is actually some sort of artifical structure."}
+    if (diceRoll == 9) { return "Artifical Construction: The setting is actually some sort of artifical structure. It could be a O'Neill Cylinder, a Dyson Sphere, a Ring World, or even a pocket reality."}
 }
 
 function climate () {
