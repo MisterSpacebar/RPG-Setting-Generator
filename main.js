@@ -9,7 +9,7 @@ function randomGen (upto) {
 function periodPiece () {
     var period = ["Cold War","Victorian England","Vietnam War","World War","Feudualism","Dark Ages","Enlightenment","Age of Discovery","Colonial Africa","Manifest Destiny","Nomadic Wandering"];
 
-    return "Historical Aesthetics: This setting is draped in a historical look and feel, much like a period piece. Your period piece is: "+period[randomGen(period.length)]
+    return "•Historical Aesthetics: This setting is draped in a historical look and feel, much like a period piece. Your period piece is: "+period[randomGen(period.length)]
 }
 
 function punkFiction () { 
@@ -24,13 +24,13 @@ function punkFiction () {
                 "Diselpunk/Decopunk: A retro-futurism pseudoscience fiction in which advanced technology is replaced with petroleum-powered equivalents, usually set in a late-WW1/early-WW2 equvalent, sometimes splattered with Art Deco.",
                 "Stonepunk: A retro-futurism pseudoscience fiction in which modern technology is replaced with stone-'powered' equivalents, usually set in the Stone Age."];
     
-    return "Punk is a subgenre of speculative fiction settings featuring a world built on one particular technology that is extrapolated to a highly sophisticated level, a gritty transreal urban style, or a particular approach to social themes. Your punk derivative is "+punk[randomGen(punk.length)];
+    return "•Punk is a subgenre of speculative fiction settings featuring a world built on one particular technology that is extrapolated to a highly sophisticated level, a gritty transreal urban style, or a particular approach to social themes. Your punk derivative is "+punk[randomGen(punk.length)];
 }
 
 function landmark () {
     var feature = ["Canyons", "Cave Network", "Massive Crater", "Huge Glaciers", "Towering Mountains","Ocean Reefs","Active Volcano"];
 
-    return "Landmark: "+feature[randomGen(feature.length)];
+    return "•Landmark: "+feature[randomGen(feature.length)];
 }
 
 function faction () {
@@ -92,36 +92,36 @@ function technologyLevel () {
 function commonTropes () {
     var diceRoll = randomGen(101);
 
-    if (diceRoll < 6) { return "Aliens: Intelligent aliens are threatening the world, come to uplift society in peace, or are secretly living amongst society."};
-    if (diceRoll > 5 && diceRoll < 10) { return "Afterlife: Characters have direct contact with the afterlife, either personally or via conduits such as artifacts or mediums."};
-    if (diceRoll > 9 && diceRoll < 12) { return "Alternate History: 'What-If' real world scenarios with few changes, that, over time, results in mahor divergences from our reality."}
-    if (diceRoll > 11 && diceRoll < 13) {return "Automation: A world dominated by more automated devices such as vehicles and nonsentient robots than human beings."}
-    if (diceRoll > 12 && diceRoll < 15) { return "Betrayal: Betrayal is commonplace in the setting, with backstabbing courtiers, vengeful peoples, and greedy individuals"}
-    if (diceRoll > 14 && diceRoll < 17) { return "Believable Technologies: This setting features technology that is realistic based on our reality. Any unrealistic technologies are generally still logically feasible."}
-    if (diceRoll > 16 && diceRoll < 19) { return "Castles:  Some type of castle or fortress play a central role to the setting or story."}
-    if (diceRoll > 18 && diceRoll < 20) { return "Cyberspace: Cyberspaces and virtual realities are as 'real' as reality in this setting or story."}
-    if (diceRoll > 19 && diceRoll < 24) { return "Dungeons: Caves, dungeons, ruins, and tombs play a central part of the setting or story."}
-    if (diceRoll > 23 && diceRoll < 26) { return "Environmental Disaster: Natural or man-made disaster(s) have drastically altered the world or is currently in the process of doing so."}
-    if (diceRoll > 25 && diceRoll < 30) { return "Gods: A pantheon of deities take an active interest in the world, influencing and interfering with the lives of its inhabitants."}
-    if (diceRoll > 29 && diceRoll < 35) { return "Good vs. Evil: Some factions and/or individuals are objectively 'Good', while others are unambigously 'Evil'. Stories in this setting revolve around the struggle between these factions."}
+    if (diceRoll < 6) { return "•Aliens: Intelligent aliens are threatening the world, come to uplift society in peace, or are secretly living amongst society."};
+    if (diceRoll > 5 && diceRoll < 10) { return "•Afterlife: Characters have direct contact with the afterlife, either personally or via conduits such as artifacts or mediums."};
+    if (diceRoll > 9 && diceRoll < 12) { return "•Alternate History: 'What-If' real world scenarios with few changes, that, over time, results in mahor divergences from our reality."}
+    if (diceRoll > 11 && diceRoll < 13) {return "•Automation: A world dominated by more automated devices such as vehicles and nonsentient robots than human beings."}
+    if (diceRoll > 12 && diceRoll < 15) { return "•Betrayal: Betrayal is commonplace in the setting, with backstabbing courtiers, vengeful peoples, and greedy individuals"}
+    if (diceRoll > 14 && diceRoll < 17) { return "•Believable Technologies: This setting features technology that is realistic based on our reality. Any unrealistic technologies are generally still logically feasible."}
+    if (diceRoll > 16 && diceRoll < 19) { return "•Castles:  Some type of castle or fortress play a central role to the setting or story."}
+    if (diceRoll > 18 && diceRoll < 20) { return "•Cyberspace: Cyberspaces and virtual realities are as 'real' as reality in this setting or story."}
+    if (diceRoll > 19 && diceRoll < 24) { return "•Dungeons: Caves, dungeons, ruins, and tombs play a central part of the setting or story."}
+    if (diceRoll > 23 && diceRoll < 26) { return "•Environmental Disaster: Natural or man-made disaster(s) have drastically altered the world or is currently in the process of doing so."}
+    if (diceRoll > 25 && diceRoll < 30) { return "•Gods: A pantheon of deities take an active interest in the world, influencing and interfering with the lives of its inhabitants."}
+    if (diceRoll > 29 && diceRoll < 35) { return "•Good vs. Evil: Some factions and/or individuals are objectively 'Good', while others are unambigously 'Evil'. Stories in this setting revolve around the struggle between these factions."}
     if (diceRoll > 34 && diceRoll < 40) { return periodPiece() }
-    if (diceRoll > 39 && diceRoll < 45) { return "Warrior Caste: The setting features a class of individuals who are capable combatants that usually adhere to a code of honor."}
-    if (diceRoll > 44 && diceRoll < 47) { return "Lost: A major element of the setting has been lost for for a long time and a major plot point is the journey to find it."}
-    if (diceRoll > 46 && diceRoll < 50) { return "Magic: Magic and mysticism is a major element in the setting and the goals of many of its character is its acquisition."}
-    if (diceRoll > 49 && diceRoll < 53) { return "Mad Science: The setting features weird pseudoscitific devices and ideas, usually championed by eccentric, reckless individuals."}
-    if (diceRoll > 52 && diceRoll < 57) { return "Monsters: Weird, fantastic, otherworldly, or otherwise dangerous creatures are a major focus and threat of this setting. Cultures have to work to accommodate or protect against these creatures, and those who are proficient at defeating them are touted as heroes."}
-    if (diceRoll > 56 && diceRoll < 60) { return "Monster Army: A horde of monstrers under the command of a powerful leader threatens part or all of the setting."}
-    if (diceRoll > 58 && diceRoll < 61) { return "Movie Realism: Realism takes a back seat to movie-inspired scenes. Heroes survive or fight through debilitating injuries, explosions are bigger than normal, and characters make decisions based on advancing the plot instead of common sense."}
-    if (diceRoll > 60 && diceRoll < 64) { return "Mutants: Genetically modified humans or other creatures are commonplace. They may be advanced versions of normal people, or terrifying creatures resulting fromt radiation or other effects."}
-    if (diceRoll > 63 && diceRoll < 69) { return "New Frontier: The setting takes place at the edge of civilization and beyond, whether in space, the deep ocean, or a new plane of reality."}
-    if (diceRoll > 68 && diceRoll < 73) { return "Post-Apocalyptic: The civilized world has effectived ended, and the survivors are trying to pick up the pieces. Broken leftover technology, abandoned cities, anarchy, and warlords are frequent elements of the setting."}
-    if (diceRoll > 72 && diceRoll < 77) { return "Gritty Realism: The setting has a prevalent theme of gritty realism. Things go wrong for the major characters, villians sometimes win, people act out of self-interest, and decisions can be motivated by misinformation, bias, fear, and irrational hatred."}
-    if (diceRoll > 76 && diceRoll < 78) { return "Robots: Sentient robots or androids are a major factor in everyday life the setting. They may be threatening, benign, or both."}
+    if (diceRoll > 39 && diceRoll < 45) { return "•Warrior Caste: The setting features a class of individuals who are capable combatants that usually adhere to a code of honor."}
+    if (diceRoll > 44 && diceRoll < 47) { return "•Lost: A major element of the setting has been lost for for a long time and a major plot point is the journey to find it."}
+    if (diceRoll > 46 && diceRoll < 50) { return "•Magic: Magic and mysticism is a major element in the setting and the goals of many of its character is its acquisition."}
+    if (diceRoll > 49 && diceRoll < 53) { return "•Mad Science: The setting features weird pseudoscitific devices and ideas, usually championed by eccentric, reckless individuals."}
+    if (diceRoll > 52 && diceRoll < 57) { return "•Monsters: Weird, fantastic, otherworldly, or otherwise dangerous creatures are a major focus and threat of this setting. Cultures have to work to accommodate or protect against these creatures, and those who are proficient at defeating them are touted as heroes."}
+    if (diceRoll > 56 && diceRoll < 60) { return "•Monster Army: A horde of monstrers under the command of a powerful leader threatens part or all of the setting."}
+    if (diceRoll > 58 && diceRoll < 61) { return "•Movie Realism: Realism takes a back seat to movie-inspired scenes. Heroes survive or fight through debilitating injuries, explosions are bigger than normal, and characters make decisions based on advancing the plot instead of common sense."}
+    if (diceRoll > 60 && diceRoll < 64) { return "•Mutants: Genetically modified humans or other creatures are commonplace. They may be advanced versions of normal people, or terrifying creatures resulting fromt radiation or other effects."}
+    if (diceRoll > 63 && diceRoll < 69) { return "•New Frontier: The setting takes place at the edge of civilization and beyond, whether in space, the deep ocean, or a new plane of reality."}
+    if (diceRoll > 68 && diceRoll < 73) { return "•Post-Apocalyptic: The civilized world has effectived ended, and the survivors are trying to pick up the pieces. Broken leftover technology, abandoned cities, anarchy, and warlords are frequent elements of the setting."}
+    if (diceRoll > 72 && diceRoll < 77) { return "•Gritty Realism: The setting has a prevalent theme of gritty realism. Things go wrong for the major characters, villians sometimes win, people act out of self-interest, and decisions can be motivated by misinformation, bias, fear, and irrational hatred."}
+    if (diceRoll > 76 && diceRoll < 78) { return "•Robots: Sentient robots or androids are a major factor in everyday life the setting. They may be threatening, benign, or both."}
     if (diceRoll > 77 && diceRoll < 85) { return punkFiction() }
-    if (diceRoll > 84 && diceRoll < 89) { return "Interplanetary Travel: No matter what the setting's technology level is, its primary civilizations have some way to travel to different worlds."}
-    if (diceRoll > 88 && diceRoll < 95) { return "Occult: Supernatural creatures such as demons, devils, and possibly angels are prominent characters, often supported by mortal allies."}
-    if (diceRoll > 94 && diceRoll < 99) { return "Undeath: The setting features creatures that live beyond death, such as vampires, spirits, ghosts, and zombies."}
-    if (diceRoll > 98) { return "Underwater: Significant aspects of the setting occur underwater, whether cultures, civilizations, or entire worlds."}
+    if (diceRoll > 84 && diceRoll < 89) { return "•Interplanetary Travel: No matter what the setting's technology level is, its primary civilizations have some way to travel to different worlds."}
+    if (diceRoll > 88 && diceRoll < 95) { return "•Occult: Supernatural creatures such as demons, devils, and possibly angels are prominent characters, often supported by mortal allies."}
+    if (diceRoll > 94 && diceRoll < 99) { return "•Undeath: The setting features creatures that live beyond death, such as vampires, spirits, ghosts, and zombies."}
+    if (diceRoll > 98) { return "•Underwater: Significant aspects of the setting occur underwater, whether cultures, civilizations, or entire worlds."}
 }
 
 function worldStructure () {
@@ -149,15 +149,15 @@ function climate () {
 function environment () {
     var diceRoll = randomGen(10);
 
-    if (diceRoll == 0) { return "Fractured Land: This region has been split and fractured by some sort of cataclysm."}
-    if (diceRoll == 1) { return "Wasteland: This region is categorized by its lack of easy access to liquid water, extreme temperatures, and hostility to life."}
-    if (diceRoll == 2) { return "Forest: This region is saturated with trees and other forestlife."}
-    if (diceRoll == 3) { return "Plains: Plains are typically some form of grassland, savanna, scrubland, plateau, or some other expanse of flattened ground."}
-    if (diceRoll == 4) { return "Mountain: Cliffs and steep rockfaces make up much of this environment, punctuated by swift-flowing streams, high altitude meadows, and hardly plant and animal life."}
-    if (diceRoll == 5) { return "Swamp: Swamps are wet, waterlogged environments full of sluggish, stagnant water. They tend to be full of disease and decay, but also teeming with life that has adapted to the environment."}
-    if (diceRoll == 6) { return "River Valley: The region is dominated by a single massive river and the lands that drain into it, or a series or river deltas."}
-    if (diceRoll == 7) { return "Ocean: The region is a vast ocean, or an ocean and the coastal regions alongside it. Most life is squatic, and civilizations may live under water or spend a lot of time on the water."}
-    if (diceRoll == 8) { return "Lake: The region is dominated by a large, freshwater lake that is big enough that crossing it may take days, and local inhabitants either live under the water or spend a lot of the time on the water."}
+    if (diceRoll == 0) { return "•Fractured Land: This region has been split and fractured by some sort of cataclysm."}
+    if (diceRoll == 1) { return "•Wasteland: This region is categorized by its lack of easy access to liquid water, extreme temperatures, and hostility to life."}
+    if (diceRoll == 2) { return "•Forest: This region is saturated with trees and other forestlife."}
+    if (diceRoll == 3) { return "•Plains: Plains are typically some form of grassland, savanna, scrubland, plateau, or some other expanse of flattened ground."}
+    if (diceRoll == 4) { return "•Mountain: Cliffs and steep rockfaces make up much of this environment, punctuated by swift-flowing streams, high altitude meadows, and hardly plant and animal life."}
+    if (diceRoll == 5) { return "•Swamp: Swamps are wet, waterlogged environments full of sluggish, stagnant water. They tend to be full of disease and decay, but also teeming with life that has adapted to the environment."}
+    if (diceRoll == 6) { return "•River Valley: The region is dominated by a single massive river and the lands that drain into it, or a series or river deltas."}
+    if (diceRoll == 7) { return "•Ocean: The region is a vast ocean, or an ocean and the coastal regions alongside it. Most life is squatic, and civilizations may live under water or spend a lot of time on the water."}
+    if (diceRoll == 8) { return "•Lake: The region is dominated by a large, freshwater lake that is big enough that crossing it may take days, and local inhabitants either live under the water or spend a lot of the time on the water."}
     if (diceRoll == 9) { return landmark() }
 }
 
@@ -177,25 +177,25 @@ function population (l) {
 function oddities () {
     var diceRoll = randomGen(100);
 
-    if (diceRoll < 6) { return "Warlike Wanderers: The region is plagued by wandering groups of warlike nomads. It is difficult to treat with these groups or negotiate with them."}
-    if (diceRoll > 5 && diceRoll < 11) { return "Sky Islands: Mountain-sized chunks of rock float above this region. They are so large that there are entire ecosystems and potential communities inhabit them."}
-    if (diceRoll > 10 && diceRoll < 19) { return "Megafauna: The region has populations of extreme large animals. At minimum, they are the size of larger dinosaurs from Earth's prehistory, but could be bigger."}
-    if (diceRoll > 18 && diceRoll < 26) { return "Spectacular Natural Beauty: The region is extreme beautiful. Local populations treasure the resplendence they live among, and other may journey to this region to bask in its splendor."}
-    if (diceRoll > 25 && diceRoll < 34) { return "Megaflora: Plant life in the region grows to be extreme large. It could include trees kilometers tall, fungi the size of houses, and other plantlife that is large enough to carve residences in."}
-    if (diceRoll > 33 && diceRoll < 36) { return "The Pit: A bottomless pit sits in a prominent location in this region. Nobody knows how this came to be, or whether it is artificial or natural."}
-    if (diceRoll > 35 && diceRoll < 47) { return "Valuable Resource: An extremely valuable resource exists in the region. It may make the locals rich, or it may also cause outsiders to venture into the region to exploit them."}
-    if (diceRoll > 46 && diceRoll < 50) { return "Incomprehensible Intelligences: The local population share the region with some sort of other life that, while seemingly intellegent, is so different that interacting with it is impossible."}
-    if (diceRoll > 49 && diceRoll < 59) { return "Ruins of a Elder Race: The region is dominated by the ruins from an older species or previous culture. Their technology is likely more advanced than that of current civilization, or at least their constructions remain marvels of engineering that dominate the landscape."}
-    if (diceRoll > 58 && diceRoll < 64) { return "Gestalt Life Form: Nearly all local life in the region is linked psychically or biologically, so that it is all part of one vast organism. This does not necessarily apply to the local inhabitants of the society the players may interact with."}
-    if (diceRoll > 63 && diceRoll < 69) { return "Elaborate Cave System: Underneath ths region is an extensive and extremely elaborate cave system with its own complex ecosystem."}
-    if (diceRoll > 68 && diceRoll < 71) { return "Localized Anomalies: For some reason, physics dont quite behave correctly in some parts of this region. Gravity may be stronger or weaker than normal, time may pass differently, or even stranger things may occur."}
-    if (diceRoll > 70 && diceRoll < 76) { return "Secret Base: An organization that has no local ties to the region has set up some sort of facility in it. Whatever it is, its members actively discourage others from being involved with its business. Your Secret Society is: "+faction(randomGen(100))+" They have the objective of "+objectives(randomGen(100))+"."}
-    if (diceRoll > 75 && diceRoll < 79) { return "Dragons: The region is home to a population of massive and intellegent reptilians that can fly and breathe fire or another primal element. They may have their own culture and society, and may regard the other local inhabitants with some mixture of annoyance, disdain, or active dislike."}
-    if (diceRoll > 78 && diceRoll < 85) { return "Constant Storms: The region is plagued by consitant storm systems that may be powerful and violent."}
-    if (diceRoll > 84 && diceRoll < 89) { return "Site of a Great Historical Event: Long ago, something incredibly important happened in a location in the region. Whatever it was, a monument has been erected to memorialize it."}
-    if (diceRoll > 88 && diceRoll < 93) { return "War Zone: This region is plagued by constant (if potentially intermittent) war between two or more factions. Locals work to try and survive the battles and skirmishes going on around them."}
-    if (diceRoll > 92 && diceRoll < 98) { return "Monastery: An organization has set up a monastery or retreat in the region. The organization's members are welcoming and open about their presence and work hard to be good neighbors with the inhabitants. Your Organization is: "+faction(randomGen(100))+" They have the objective of "+objectives(randomGen(100))+"."}
-    if (diceRoll > 97) { return "Hunter: Something lives in the region that hunts its inhabitants for some reason. The Hunter may be a creature, person, or something stranger. Whatever it is, the local communities has been unable to eliminate it and is forced to live around it instead."}
+    if (diceRoll < 6) { return "•Warlike Wanderers: The region is plagued by wandering groups of warlike nomads. It is difficult to treat with these groups or negotiate with them."}
+    if (diceRoll > 5 && diceRoll < 11) { return "•Sky Islands: Mountain-sized chunks of rock float above this region. They are so large that there are entire ecosystems and potential communities inhabit them."}
+    if (diceRoll > 10 && diceRoll < 19) { return "•Megafauna: The region has populations of extreme large animals. At minimum, they are the size of larger dinosaurs from Earth's prehistory, but could be bigger."}
+    if (diceRoll > 18 && diceRoll < 26) { return "•Spectacular Natural Beauty: The region is extreme beautiful. Local populations treasure the resplendence they live among, and other may journey to this region to bask in its splendor."}
+    if (diceRoll > 25 && diceRoll < 34) { return "•Megaflora: Plant life in the region grows to be extreme large. It could include trees kilometers tall, fungi the size of houses, and other plantlife that is large enough to carve residences in."}
+    if (diceRoll > 33 && diceRoll < 36) { return "•The Pit: A bottomless pit sits in a prominent location in this region. Nobody knows how this came to be, or whether it is artificial or natural."}
+    if (diceRoll > 35 && diceRoll < 47) { return "•Valuable Resource: An extremely valuable resource exists in the region. It may make the locals rich, or it may also cause outsiders to venture into the region to exploit them."}
+    if (diceRoll > 46 && diceRoll < 50) { return "•Incomprehensible Intelligences: The local population share the region with some sort of other life that, while seemingly intellegent, is so different that interacting with it is impossible."}
+    if (diceRoll > 49 && diceRoll < 59) { return "•Ruins of a Elder Race: The region is dominated by the ruins from an older species or previous culture. Their technology is likely more advanced than that of current civilization, or at least their constructions remain marvels of engineering that dominate the landscape."}
+    if (diceRoll > 58 && diceRoll < 64) { return "•Gestalt Life Form: Nearly all local life in the region is linked psychically or biologically, so that it is all part of one vast organism. This does not necessarily apply to the local inhabitants of the society the players may interact with."}
+    if (diceRoll > 63 && diceRoll < 69) { return "•Elaborate Cave System: Underneath ths region is an extensive and extremely elaborate cave system with its own complex ecosystem."}
+    if (diceRoll > 68 && diceRoll < 71) { return "•Localized Anomalies: For some reason, physics dont quite behave correctly in some parts of this region. Gravity may be stronger or weaker than normal, time may pass differently, or even stranger things may occur."}
+    if (diceRoll > 70 && diceRoll < 76) { return "•Secret Base: An organization that has no local ties to the region has set up some sort of facility in it. Whatever it is, its members actively discourage others from being involved with its business. Your Secret Society is: "+faction(randomGen(100))+" They have the objective of "+objectives(randomGen(100))+"."}
+    if (diceRoll > 75 && diceRoll < 79) { return "•Dragons: The region is home to a population of massive and intellegent reptilians that can fly and breathe fire or another primal element. They may have their own culture and society, and may regard the other local inhabitants with some mixture of annoyance, disdain, or active dislike."}
+    if (diceRoll > 78 && diceRoll < 85) { return "•Constant Storms: The region is plagued by consitant storm systems that may be powerful and violent."}
+    if (diceRoll > 84 && diceRoll < 89) { return "•Site of a Great Historical Event: Long ago, something incredibly important happened in a location in the region. Whatever it was, a monument has been erected to memorialize it."}
+    if (diceRoll > 88 && diceRoll < 93) { return "•War Zone: This region is plagued by constant (if potentially intermittent) war between two or more factions. Locals work to try and survive the battles and skirmishes going on around them."}
+    if (diceRoll > 92 && diceRoll < 98) { return "•Monastery: An organization has set up a monastery or retreat in the region. The organization's members are welcoming and open about their presence and work hard to be good neighbors with the inhabitants. Your Organization is: "+faction(randomGen(100))+" They have the objective of "+objectives(randomGen(100))+"."}
+    if (diceRoll > 97) { return "•Hunter: Something lives in the region that hunts its inhabitants for some reason. The Hunter may be a creature, person, or something stranger. Whatever it is, the local communities has been unable to eliminate it and is forced to live around it instead."}
 }
 
 function pantheon () {
