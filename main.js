@@ -36,36 +36,36 @@ function landmark () {
 function faction () {
     var diceRoll = randomGen(100);
 
-    if (diceRoll < 8) { return "Academics: Individuals dedicated to learning and research, who may have banded together."}
-    if (diceRoll > 7 && diceRoll < 15) { return "Caste System: Social stratification of a society based on heredity."}
-    if (diceRoll > 14 && diceRoll < 22) { return "Clans: Traditionally based on an extended family grouping, but may extend beyond family ties."}
-    if (diceRoll > 21 && diceRoll < 30) { return "Corporation: Formal business with executives, board members, officiers, employees, etc."}
-    if (diceRoll > 29 && diceRoll < 37) { return "Fans/Fanatics: People that have banded together over a common interest and may struggle against other similar groups that do not share their beliefs."}
-    if (diceRoll > 36 && diceRoll < 46) { return "Guild: An organization of people that may have a monopoly on a particular portion of the market, or a loose collective of individuals who just wants to look out for one another when a greater threat looms."}
-    if (diceRoll > 45 && diceRoll < 56) { return "Military: A militant group that tend to follow a strict hierarchy, with professional codes of conduct."}
-    if (diceRoll > 55 && diceRoll < 65) { return "Pirates: A faction of outlaws that usually has rallied around a singluar charismatic leader."}
-    if (diceRoll > 64 && diceRoll < 74) { return "Political Faction: A group of individuals who share common overall political and societal viewpoints."}
-    if (diceRoll > 73 && diceRoll < 83) { return "Rebels/Terrorists: Groups working towards a violent overthrowing of an organization or government."}
-    if (diceRoll > 82 && diceRoll < 91) { return "Religious Organization: A group of individuals with similar philosophical and/or religious beliefs."}
-    if (diceRoll > 90) { return "Union: A group of working-class individuals who have banded together to lobby for better working conditions, pay, or other benefits."}
+    if (diceRoll < 8) { return "•Academics: Individuals dedicated to learning and research, who may have banded together."}
+    if (diceRoll > 7 && diceRoll < 15) { return "•Caste System: Social stratification of a society based on heredity."}
+    if (diceRoll > 14 && diceRoll < 22) { return "•Clans: Traditionally based on an extended family grouping, but may extend beyond family ties."}
+    if (diceRoll > 21 && diceRoll < 30) { return "•Corporation: Formal business with executives, board members, officiers, employees, etc."}
+    if (diceRoll > 29 && diceRoll < 37) { return "•Fans/Fanatics: People that have banded together over a common interest and may struggle against other similar groups that do not share their beliefs."}
+    if (diceRoll > 36 && diceRoll < 46) { return "•Guild: An organization of people that may have a monopoly on a particular portion of the market, or a loose collective of individuals who just wants to look out for one another when a greater threat looms."}
+    if (diceRoll > 45 && diceRoll < 56) { return "•Military: A militant group that tend to follow a strict hierarchy, with professional codes of conduct."}
+    if (diceRoll > 55 && diceRoll < 65) { return "•Pirates: A faction of outlaws that usually has rallied around a singluar charismatic leader."}
+    if (diceRoll > 64 && diceRoll < 74) { return "•Political Faction: A group of individuals who share common overall political and societal viewpoints."}
+    if (diceRoll > 73 && diceRoll < 83) { return "•Rebels/Terrorists: Groups working towards a violent overthrowing of an organization or government."}
+    if (diceRoll > 82 && diceRoll < 91) { return "•Religious Organization: A group of individuals with similar philosophical and/or religious beliefs."}
+    if (diceRoll > 90) { return "•Union: A group of working-class individuals who have banded together to lobby for better working conditions, pay, or other benefits."}
 }
 
 function objectives () {
     var diceRoll = randomGen(100);
 
-    if (diceRoll < 7) { return "Assassination (the organization attempts to covertly murder influential individuals who threaten its existance)"}
-    if (diceRoll > 6 && diceRoll < 15) { return "Economic Growth (the organization is maximizing its potential for monetary earnings)"}
-    if (diceRoll > 14 && diceRoll < 22) { return "Exploration (the organzation wishes to explore specific regions for raw materials, discoveries, isolated societies, glory, etc.)"}
-    if (diceRoll > 21 && diceRoll < 30) { return "Illicit Activities (the organization runs criminal rackets such as smuggling, gambling, extortion, or similar measures to make money and/or to control certain areas or types of operations"}
-    if (diceRoll > 29 && diceRoll < 36) { return "Investigation (the organization carries out investigations of controversial or criminial activities in order to protect the public or to further their objectives)"}
-    if (diceRoll > 35 && diceRoll < 45) { return "Enforcement (the organization enforces the laws of the land)"}
-    if (diceRoll > 44 && diceRoll < 54) { return "Military Expansion (the organization expands its power through military means, such as invasions or conquests)"}
-    if (diceRoll > 53 && diceRoll < 64) { return "Monopoly (the organization seeks to corner the market for specific goods and services)"}
-    if (diceRoll > 63 && diceRoll < 72) { return "Overthrow (the organization seeks to overthrow the head of another organization or government or another powerful entity)"}
-    if (diceRoll > 71 && diceRoll < 81) { return "Protection (the organization seeks to protect something or a group or allied organizations)"}
-    if (diceRoll > 80 && diceRoll < 88) { return "Research (the organization researches specific subjectives to facilitate developments)"}
-    if (diceRoll > 87 && diceRoll < 94) { return "Territory (the organization seeks to expand its territory or influence to protect what it already has)"}
-    if (diceRoll > 93) { return "Terrorism (the organization are trained and funded to achieve change through violent attacks against a population)"}
+    if (diceRoll < 7) { return "•Assassination (the organization attempts to covertly murder influential individuals who threaten its existance)"}
+    if (diceRoll > 6 && diceRoll < 15) { return "•Economic Growth (the organization is maximizing its potential for monetary earnings)"}
+    if (diceRoll > 14 && diceRoll < 22) { return "•Exploration (the organzation wishes to explore specific regions for raw materials, discoveries, isolated societies, glory, etc.)"}
+    if (diceRoll > 21 && diceRoll < 30) { return "•Illicit Activities (the organization runs criminal rackets such as smuggling, gambling, extortion, or similar measures to make money and/or to control certain areas or types of operations"}
+    if (diceRoll > 29 && diceRoll < 36) { return "•Investigation (the organization carries out investigations of controversial or criminial activities in order to protect the public or to further their objectives)"}
+    if (diceRoll > 35 && diceRoll < 45) { return "•Enforcement (the organization enforces the laws of the land)"}
+    if (diceRoll > 44 && diceRoll < 54) { return "•Military Expansion (the organization expands its power through military means, such as invasions or conquests)"}
+    if (diceRoll > 53 && diceRoll < 64) { return "•Monopoly (the organization seeks to corner the market for specific goods and services)"}
+    if (diceRoll > 63 && diceRoll < 72) { return "•Overthrow (the organization seeks to overthrow the head of another organization or government or another powerful entity)"}
+    if (diceRoll > 71 && diceRoll < 81) { return "•Protection (the organization seeks to protect something or a group or allied organizations)"}
+    if (diceRoll > 80 && diceRoll < 88) { return "•Research (the organization researches specific subjectives to facilitate developments)"}
+    if (diceRoll > 87 && diceRoll < 94) { return "•Territory (the organization seeks to expand its territory or influence to protect what it already has)"}
+    if (diceRoll > 93) { return "•Terrorism (the organization are trained and funded to achieve change through violent attacks against a population)"}
 }
 
 function technologyLevel () {
